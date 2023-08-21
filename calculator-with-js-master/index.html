@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3870622128398918"
+     crossorigin="anonymous"></script>
+  <title>Calculator app</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- JAVASCRIPT -->
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <main class="calculator">
+    <div class="header">
+      <h1>calc</h1>
+      <h6>THEME</h6>
+      <div class="div">
+        <div class="input">
+          <input id="theme1" type="radio" name="theme" value="0" checked onclick="themeChange('theme1')">
+          <label for="theme1">1</label>
+
+          <input id="theme2" type="radio" value="1" name="theme" onclick="themeChange('theme2')">
+          <label for="theme2">2</label>
+
+          <input id="theme3" type="radio" value="2" name="theme" onclick="themeChange('theme3')">
+          <label for="theme3">3</label>
+        </div>
+      </div>
+    </div>
+    <div class="user-input">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <div class="grid-container">
+      <button data-num>7</button>
+      <button data-num>8</button>
+      <button data-num>9</button>
+      <button data-delete>DEL</button>
+      <button data-num>4</button>
+      <button data-num>5</button>
+      <button data-num>6</button>
+      <button data-operator>+</button>
+      <button data-num>1</button>
+      <button data-num>2</button>
+      <button data-num>3</button>
+      <button data-operator>-</button>
+      <button data-num>.</button>
+      <button data-num>0</button>
+      <button data-operator>/</button>
+      <button data-operator>×</button>
+      <button data-reset class="column-span">RESET</button>
+      <button data-output class="column-span">=</button>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Somesh-Dahatonde/calculator-with-js" target="_blank">💟 Somesh</a>.
+  </footer>
+</body>
+
+</html>
